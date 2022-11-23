@@ -7,7 +7,7 @@
 class observium::snmp {
   assert_private()
   # check if we are managing snmp
-  if observium::manage_snmp {
+  if $observium::manage_snmp {
     # lookup values for ubuntu 20.04 user, no native support in snmp module, otherwise return undef
     $ubuntu2004user = lookup(observium::debiansnmp_user)
 
