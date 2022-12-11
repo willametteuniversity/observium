@@ -33,6 +33,7 @@ class observium::yum {
           *      => $repoinfo,
         }
       }
+      }
 
       default: { fail('Unsupported operating system, bailing out!!') }
     }
